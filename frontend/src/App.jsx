@@ -36,14 +36,14 @@ function App() {
     }
   };
 
-  const isButtonDisabled = shownIds.length >= items.length;
+  const isButtonDisabled = shownIds.length >= items.length && items.length > 0;
 
   return (
     <div className="App">
       <h1>Things to do if you are bored</h1>
       <p>When you click the button you might find a lot of things that you can do some of which can be adventurous and others which can be very chill.</p>
       <button onClick={handleRandomSelect} disabled={isButtonDisabled}>
-        {isButtonDisabled ? 'You have seen all the fun for now! Wait for new updates.' : 'Find Your Fun'}
+        {isButtonDisabled ? 'You’ve seen all the fun for now! Wait for new updates.' : 'Find Your Fun'}
       </button>
       {randomItem && (
         <div>
