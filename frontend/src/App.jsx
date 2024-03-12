@@ -43,7 +43,7 @@ function App() {
       <h1>Things to do if you are bored</h1>
       <p>When you click the button you might find a lot of things that you can do some of which can be adventurous and others which can be very chill.</p>
       <button onClick={handleRandomSelect} disabled={isButtonDisabled}>
-        {isButtonDisabled ? "🎉 Adventure unlocked! You've experienced all the fun we've got... for now. Hang tight – the next fun drop is on the horizon! 🌟" : 'Find Your Fun'}
+        {isButtonDisabled ? "🎉 Adventure unlocked! You've experienced all the fun we've got... for now. Hang tight – the next fun drop is on the horizon! 🌟" : "Find Your Fun"}
       </button>
       {randomItem && (
         <div>
